@@ -135,7 +135,11 @@ with open(inprogress, "w") as fh:
 exit_code = os.system(cmd)
 if exit_code == 0:
     os.remove(inprogress)
-    os.unlink(link)
+    try:
+        os.unlink(link)
+    except OSError:
+        # Link does not exist
+        pass
     os.symlink(dst, link)
 else:
     print("Error: Exited with error code %s" % exit_code)
