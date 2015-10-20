@@ -1,0 +1,11 @@
+**/Downloads/**
+**/Dropbox/**
+**/Videos/**
+**/Music/**
+.cache
+**/.local/share/zeitgeist/**
+**/.config/google-chrome/**
+**/.config/chromium/**
+**/.trash/**
+.thumbnails/
+/home/olaf/workspace/pm/msgpoker/protected/runtime/
